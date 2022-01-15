@@ -1,0 +1,165 @@
+*{
+  padding: 1;
+  margin: 0;
+  transition: 0.3s;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.header {
+  margin-bottom: 30px;
+  padding: 12px;
+  background-color: #DB7093;
+  color: white;
+}
+.content {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: grid;
+  grid-template-columns: auto 40vw;
+  grid-gap: 15px;
+}
+.wrp-hobbie {
+  width: 100% !important;
+}
+.bag-1 {
+  text-align: justify;
+}
+.card {
+  background-color: #AC3B61;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+.list a {
+  padding: 5px 0;
+  color: black;
+  color: #fff;
+  text-decoration: none;
+}
+.list a:hover {
+  margin-left: 6px;
+}
+.bag-2 {
+  padding: 12px;
+  background-color: #AC3B61;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 1px 1px 3px 5px #DB709;
+}
+.hobbie-list {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  padding: 10px 0;
+  grid-gap: 24px;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+}
+.hobbie-list img {
+  width: 100%;
+}
+.intro {
+  width: 80%;
+  margin: auto;
+}
+.intro h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.list-hobbi {
+  position: relative;
+}
+.list-hobbi:hover {
+  box-shadow: 0px 0px 4px 13px #db709394;
+  border-radius: 10px;
+}
+.list-hobbi h4 {
+  position: absolute;
+  bottom: 100px;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 0 5px grey;
+  padding: 12px;
+  z-index: 999;
+}
+.nav-link {
+  padding: 16px 0;
+
+}
+.nav-link a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.nav-link a:hover {
+  color: red !important;
+  margin-left: 6px;
+}
+@media screen and (max-width: 678px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes shadow {
+    0% {
+        margin-top: -10px;
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -10px;
+    }
+}
+.cards {
+    border: 0;
+    animation: shadow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes box {
+  0%   { left:0px}
+  50%  { left:100px}
+  100% { left:0px}
+}
+.anim1{
+  width: 400px;
+  height: 40px;
+  background-color: #AC3B61;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  animation-name: box;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.slide {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+img {border-radius:10px}
